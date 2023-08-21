@@ -122,7 +122,8 @@ $(document).ready(function(){
                                                                    
         if(is_numBtn && flg_symbolBtn == 0 || flg_symbolBtn == 2){　//左辺に数字が入っていて
                                                                     //演算子は一度も押されていない(行頭に演算子が入るのを防止する)
-            flg_symbolBtn = 1;　　　　　　　　　　　　　　　　　　　//または、=ボタンが押されている(=ボタン後も計算を続けるため)
+                                                                    //または、=ボタンが押されている(=ボタン後も計算を続けるため)
+            flg_symbolBtn = 1;
             is_numBtn = false;
             
             num = "";　// numに左辺の値が入ってるため初期化
